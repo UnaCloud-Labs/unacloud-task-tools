@@ -1,0 +1,16 @@
+Source: unacloud-task-tools
+Section: admin
+Priority: optional
+Maintainer: antonio de la vega <aj.de10@uniandes.edu.co> 
+Uploaders: jaime chavarriaga <ja.chavarriaga908@uniandes.edu.co>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://www.uniandes.edu.co
+Vcs-Git: https://github.com/UnaCloud-Labs/unacloud-task-scheduler.git 
+Vcs-Browser: https://github.com/UnaCloud-Labs/unacloud-task-scheduler
+
+Package: unacloud-task-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: tool for assigning tasks to the unacloud scheduler.
+

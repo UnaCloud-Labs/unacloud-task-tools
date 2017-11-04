@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+PACKAGE = $(shell dh_listpackages)
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	PREFIX=$(TMP)/usr dh_auto_install

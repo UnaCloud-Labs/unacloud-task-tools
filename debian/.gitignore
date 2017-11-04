@@ -1,0 +1,6 @@
+# ignore files for debian installers
+
+unacloud-task-tools/*
+unacloud-task-tools.substvars
+
+*.log

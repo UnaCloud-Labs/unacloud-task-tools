@@ -1,0 +1,7 @@
+# ignore binary files
+register_uc
+
+# ignore eclipse configuration
+.cproject
+.project
+.settings/
