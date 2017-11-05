@@ -12,10 +12,11 @@ int main(int argc, char *argv[])
 {
 
     struct sched_param sp;
+    sp.sched_priority = 0;
     if (argc == 1)
         err(EXIT_FAILURE, "must pass process pid as parameter.");
 
-    int pid = atoi(argv[1]);
+    pid_t pid = strtol(argv[1], NULL, 10);
     if (pid == 0) 
         err(EXIT_FAILURE, "wrong parameter. must pass process id as parameter.");
 
